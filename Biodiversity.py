@@ -32,7 +32,7 @@ def LineToList(Str):
 
 
 def LocationCount(animal, FileName, Distance, Lat, Lon):
-    """Find the number of animals in a give distance(km)."""
+    """Find the number of animals in a given distance(km)."""
     
     animal_type = str(animal)
     with open(FileName, "r") as FIn:
