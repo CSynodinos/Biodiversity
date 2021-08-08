@@ -113,9 +113,8 @@ def BiodiversityCount(FileName, Distance, Lat, Lon):
         FIn.close()
     return result
 
-
-if __name__ == "__main__":
-    
+def main():
+        
     # Files.
     mammals_f = 'Mammal.txt'
     birds_f = 'Birds.txt'
@@ -129,3 +128,6 @@ if __name__ == "__main__":
     LocationCount('Birds', birds_f, 15.0, 54.988056, -1.619444) # The Town Moor park in Newcastle, Lat, Lon
     PrintLocation(birds_f, 15.0, 51.452884, -0.973906)    # Reading Borough Council, Lat, Lon
     BiodiversityCount(birds_f, 25.0, 51.508129, -0.128005)    # Trafalgar square, Lat, Lon
+
+if __name__ == "__main__":
+    main()
